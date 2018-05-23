@@ -116,7 +116,7 @@ If you want to use your own components to render markdown, it's easy! Just provi
 **Important Note**: _If you override the `pre` or `code` tag renderers, you will most likely break the automatic syntax highlighting!_
 
 ```javascript
-import { Markdown } from "smackdown";
+import { Markdown } from "react-smackdown";
 
 const renderers = {
   a: ({ href, ...rest }) => <Link to={href} {...rest} />
@@ -140,7 +140,7 @@ If you don't need to render any markdown, but still want syntax highlighting, yo
 * `showLineNumbers: Boolean` - Defaults to `true`
 
 ```javascript
-import { Code } from "smackdown";
+import { Code } from "react-smackdown";
 
 const source = `
   const foo = 'bar'
